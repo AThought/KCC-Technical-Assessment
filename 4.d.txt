@@ -1,0 +1,4 @@
+SELECT t.transaction_id, t.product_id, t.Amount, t.Timestamp
+FROM tb_transactions t
+JOIN tb_customers c ON t.customer_id = c.customer_id
+WHERE c.customer_id = <customer_id>;

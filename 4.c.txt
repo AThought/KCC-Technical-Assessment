@@ -1,0 +1,4 @@
+ALTER TABLE tb_transactions
+ADD CONSTRAINT fk_customer
+FOREIGN KEY (customer_id)
+REFERENCES tb_customers(customer_id);
